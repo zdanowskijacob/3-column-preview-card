@@ -1,0 +1,127 @@
+/* Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%) */
+/* 
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    font-size: 15px;
+}
+div.card{
+    width: 80%;
+    height: 50vh;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    
+}
+div.card:nth-child(1)
+{
+    margin-top: 20%;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+div.card:nth-child(2)
+{
+    background-color: hsl(184, 100%, 22%);
+}
+div.card:nth-child(3)
+{
+    background-color:hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+}
+div.card h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    padding: 25px 40px;
+}
+div.card p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 80%;
+    margin: 0 auto 20px;
+    padding: 0 10px;
+    line-height: 1.6;
+}
+div.card button{
+    display: block;
+    padding: 10px 20px;
+    margin: 0 0 0 40px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius:20px;
+}
+div.card:nth-child(1) button{
+    color: hsl(31, 77%, 52%);
+}
+div.card:nth-child(2) button{
+    color: hsl(184, 100%, 22%);
+}
+div.card:nth-child(3) button{
+    color: hsl(179, 100%, 13%);
+}
+div.card img{
+    padding: 40px 0 0 40px;
+}
+@media(min-width: 1440px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 150px 300px;
+    }
+    div.card{
+        width: 370px;
+        margin: 0;
+        padding-bottom: 80px;        
+    }
+    div.card:nth-child(1)
+    {
+    margin-top: 0;
+    border-radius: 10px 0 0 10px ;
+    }
+    div.card:nth-child(3)
+    {
+    margin-top: 0;
+    border-radius:  0 10px 10px 0 ;
+    }
+    div.card h1{
+        padding: 25px 60px;
+    }
+    div.card p{
+        width: 50%;
+        margin-left: 50px;
+    }
+    div.card button{
+        margin: 60px 0 0 80px;
+        cursor: pointer;
+    }
+    div.card button:hover{
+        color: hsl(0, 0%, 95%);
+        border: 2px solid hsl(0, 0%, 95%);
+    }
+    div.card:nth-child(1) button:hover{
+        background-color: hsl(31, 77%, 52%);
+
+    }
+    div.card:nth-child(2) button:hover{
+        background-color: hsl(184, 100%, 22%);
+
+    }
+    div.card:nth-child(3) button:hover{
+        background-color: hsl(179, 100%, 13%);
+
+    }
+    div.attribution{
+        margin-top: 100px;
+        width: 100%;
+    }
+}
